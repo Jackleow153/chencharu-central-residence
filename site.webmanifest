@@ -1,0 +1,10 @@
+{
+  "name": "Chencharu Central Residences Guide",
+  "short_name": "Chencharu Central",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F4F1EB",
+  "theme_color": "#F4F1EB",
+  "lang": "en-SG",
+  "icons": [{ "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
