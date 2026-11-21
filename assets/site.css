@@ -158,9 +158,15 @@ footer .legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px
 .mbar{display:none}
 @media (max-width:760px){
   .mbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);padding:8px var(--gutr) calc(8px + env(safe-area-inset-bottom,0px)) var(--gut)}
-  .mbar .btn{flex:1}.mbar .wa{flex:none;width:48px;height:48px;border-radius:50%;padding:0}
+  .mbar .btn{flex:1}.mbar .wa{white-space:nowrap;padding:12px 14px}.mbar .call{flex:none;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);text-decoration:none}
+  .hero .btns .btn.wa{display:none}
   .mbar .wa::after{content:none}
   body{padding-bottom:72px}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 @media print{.hdr,.menubtn,.sheet,.mbar,footer,.cta{display:none}}
+
+/* related pages and key facts (Phase 1, 21 Nov 2026) */
+.related{padding:8px 0 48px}.related h2{font-size:1.25rem;margin:0 0 12px}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related li{margin:0}.related a{display:block;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:#FBFAF7;color:var(--ink);text-decoration:none;font-weight:600}.related a:hover{border-color:var(--ink)}
+.keyfacts{margin-top:24px}
+.faq summary::after{margin-right:4px}

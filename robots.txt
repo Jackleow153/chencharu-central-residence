@@ -1,6 +1,12 @@
-User-agent: *
+# Search engines and AI assistants are welcome to read and cite this guide.
+User-agent: Googlebot
 Allow: /
-Disallow: /thank-you/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 User-agent: GPTBot
 Allow: /
@@ -8,13 +14,25 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
@@ -22,6 +40,13 @@ Allow: /
 
 User-agent: CCBot
 Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /thank-you/
 
 Sitemap: https://chencharuyishun.sg/sitemap.xml
 
