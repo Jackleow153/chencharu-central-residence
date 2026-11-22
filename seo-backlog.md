@@ -32,3 +32,4 @@ the daily run must not do these alone. Mondays: ship the top speed-safe item wit
 - Related pages links (Price, Register, 2-3 related) on 16 pages; robots.txt lists every crawler in section 7; IndexNow key file; 404 page; site.css now versioned (`?v=`).
 - Mobile bar: WhatsApp primary (label by page intent) plus a call button; the hero's WhatsApp button hides on phones so the same CTA is never shown twice on one screen; every WhatsApp message names the page.
 - Fixed a 2 px sideways scroll on the FAQ page (rotated arrow icon).
+- 22 Nov 2026: `netlify.toml` skips the deploy when a push changes only internal files; the daily run pushes nothing when it finds no new information (Jack).
