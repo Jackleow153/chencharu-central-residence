@@ -475,12 +475,11 @@ article("Privacy", "What the form stores.",
 "<strong>The form asks for a name, a mobile number, an optional unit type, and consent.</strong> It is used to reply about Chencharu Central Residences.",
 f'''<section>
 <ul>
-<li>The form is a Netlify Form once this folder is deployed. Until then it is only a local page and does not submit anywhere.</li>
+<li>Enquiries sent through the form are stored by Netlify Forms for this site, chencharuyishun.sg, and read by Jack Leow of PropNex Realty Pte Ltd.</li>
 <li>Jack Leow of PropNex Realty Pte Ltd reads the enquiry. It is not sold as a list.</li>
 <li>You can ask for the enquiry to be deleted by writing to the same mobile number, +65 8062 1538.</li>
 <li>The thank-you page is not indexed.</li>
 </ul>
-<p>This note will name the live host when a domain is connected. It does not name one today, because none has been bought.</p>
 </section>'''),
 ""))
 

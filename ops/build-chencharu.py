@@ -11,7 +11,8 @@ UPDATED = "2026-11-18"          # facts last checked (byline); change only after
 PUBLISHED = "2026-11-18"
 # dateModified / sitemap lastmod per page: bump only when that page's content materially changes (CLAUDE.md section 6)
 MODIFIED = {"/": "2026-11-21", "/price/": "2026-11-21", "/facts/": "2026-11-21", "/faq/": "2026-11-21",
-            "/register/": "2026-11-21", "/review/": "2026-11-21"}
+            "/register/": "2026-11-21", "/review/": "2026-11-21",
+            "/privacy/": "2026-11-22"}
 INDEXNOW_KEY = "5d0c7a91e4b24f3c8a6e2b17f9d4c380"
 ALIASES = ["Chencharu Close GLS", "Chencharu Close condo", "Chencharu Close Residences", "Chencharu condo",
            "Chencharu integrated development", "Khatib integrated condo", "Yishun new launch 2027"]
