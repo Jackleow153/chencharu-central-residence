@@ -4,8 +4,8 @@ Ranked by expected impact on the mission (CLAUDE.md section 1). **[Jack]** = nee
 the daily run must not do these alone. Mondays: ship the top speed-safe item without [Jack]. Created 21 November 2026 from the Phase 1 audit.
 
 ## Ranked
-1. **Pre-build launch sections** (section 14, launch reported for January 2027): price list table on `/price/`, sales results and balance units, all hidden until real data, so each goes live within an hour of release.
-2. **[Jack] Privacy page correction** (`ops/flags.md`): approve the proposed wording so the page matches the live site.
+1. **Pre-build launch sections**: price list and sales results done 23 Nov 2026 (`PRICE_LIST` / `SALES` in `ops/chencharu_pages.py`, render nothing until filled). Still to do: balance units block, once a developer list format is known.
+2. ~~[Jack] Privacy page correction~~: done 22 Nov 2026.
 3. **[Jack] Timed walk to Khatib MRT** and photos of the route: settles the 330 m / 450 m / 460 m / 6-minute conflict with a first-hand, dated measurement.
 4. **Podium / integrated hub analysis** (section 3B): what the bus interchange, 40-stall hawker centre and mall mean for daily life, rents and resale, benchmarked against North Park Residences / Northpoint City and Parktown Residence. Strengthen `/site-plan/` and `/facilities/` first; a separate page only if the analysis is substantial.
 5. **School distances from OneMap** (1 km / 2 km bands) on `/schools/`, labelled as measured from the site boundary point, with the MOE caveat.
@@ -33,3 +33,7 @@ the daily run must not do these alone. Mondays: ship the top speed-safe item wit
 - Mobile bar: WhatsApp primary (label by page intent) plus a call button; the hero's WhatsApp button hides on phones so the same CTA is never shown twice on one screen; every WhatsApp message names the page.
 - Fixed a 2 px sideways scroll on the FAQ page (rotated arrow icon).
 - 22 Nov 2026: `netlify.toml` skips the deploy when a push changes only internal files; the daily run pushes nothing when it finds no new information (Jack).
+
+## Monday SEO check (23 Nov 2026)
+- Top results for "Chencharu Central Residences" / "Chencharu Close condo": propertynet.sg, chencharu.com, newlaunchescondo.sg, 99.co, aiproperty.sg, teeco.sg, chencharuclose.sg, homeswift.ai, lovelyhomes.com.sg. Most state the 16 Jan 2027 preview and "$1.3xM" as fact; none cites the Malaysian press launch target or Gamuda's filing. PropertyNet carries D27 resale vs new-sale psf medians from URA data, which supports backlog item 6.
+- Shipped: item 1 (hidden price list and sales results sections on `/price/`).

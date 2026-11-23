@@ -10,7 +10,8 @@ CSS_V = "0"
 UPDATED = "2026-11-18"          # facts last checked (byline); change only after re-verifying
 PUBLISHED = "2026-11-18"
 # dateModified / sitemap lastmod per page: bump only when that page's content materially changes (CLAUDE.md section 6)
-MODIFIED = {"/": "2026-11-21", "/price/": "2026-11-21", "/facts/": "2026-11-21", "/faq/": "2026-11-21",
+MODIFIED = {"/": "2026-11-23", "/price/": "2026-11-21", "/facts/": "2026-11-23", "/faq/": "2026-11-23",
+            "/launch-date/": "2026-11-23", "/news/": "2026-11-23",
             "/register/": "2026-11-21", "/review/": "2026-11-21",
             "/privacy/": "2026-11-22"}
 INDEXNOW_KEY = "5d0c7a91e4b24f3c8a6e2b17f9d4c380"
@@ -96,7 +97,7 @@ PROJECT_LD = {
         {"@type": "PropertyValue", "name": "Landowners", "value": "Gamuda (Singapore) 50%, Evia MCS 30%, H108 20% (Gamuda Berhad filing, 29 September 2025)"},
         {"@type": "PropertyValue", "name": "Nearest MRT", "value": "Khatib (NS14), North-South Line; within 450 m per Gamuda's filing"},
         {"@type": "PropertyValue", "name": "Blocks", "value": "Not yet released by the developer"},
-        {"@type": "PropertyValue", "name": "Expected launch", "value": "End of January 2027 (Reported, agency ebook)"},
+        {"@type": "PropertyValue", "name": "Expected launch", "value": "End of January 2027 (Reported, agency ebook); first-quarter 2027 target (Reported, The Star and EdgeProp Malaysia)"},
         {"@type": "PropertyValue", "name": "HDB project completion period", "value": "84 months from 26 September 2025, to September 2032"}],
 }
 
@@ -289,7 +290,7 @@ HOME = f'''
 <tr><th scope="row">Homes</th><td>About 875. HDB's estimate, which it said may vary. {R}</td></tr>
 <tr><th scope="row">Blocks</th><td>Not yet released by the developer. An agency ebook reports 11 blocks of 12 storeys. {R}</td></tr>
 <tr><th scope="row">Nearest MRT</th><td>Khatib (NS14), within 450 m according to Gamuda's filing. {C}</td></tr>
-<tr><th scope="row">Launch</th><td>End of January 2027, from an agency ebook. Not a developer date. {R}</td></tr>
+<tr><th scope="row">Launch</th><td>End of January 2027, from an agency ebook. The Star and EdgeProp Malaysia report a first-quarter 2027 target. Not a developer date. {R}</td></tr>
 <tr><th scope="row">Completion</th><td>HDB's project completion period runs to September 2032. No TOP date published. {C}</td></tr>
 </tbody></table></div></div>
 
@@ -391,7 +392,7 @@ Each fact is labelled Confirmed (HDB, LTA, a company filing, or a named news rep
 - Gamuda says the site is within 450 m of Khatib MRT. This guide did not survey the walk [Confirmed as the company's statement]
 - HDB project completion period: 84 months from 26 Sep 2025, running to September 2032. This is not a published TOP date [Confirmed]
 - Marketing name, 875 homes, 11 blocks of 12 storeys, sizes 527–1,389 sq ft, guide prices from about $1.3 million (2-bedroom), $1.8 million (3-bedroom), $2.3 million (4-bedroom) and $2.8 million (5-bedroom): PropNex agency ebook file-dated 16 Nov 2026, not a developer price list [Reported]
-- Launch window end January 2027 [Reported]. 16 Jan preview and 30 Jan booking appear on one agent page as TBC and are not adopted
+- Launch window end January 2027 [Reported, ebook]. Launch targeted for early 2027 / Q1 2027 [Reported, The Star 25 Mar 2026; EdgeProp Malaysia 22 Oct 2026; unattributed]. 16 Jan preview and 30 Jan booking appear on one agent page as TBC and are not adopted
 - Lease start 24 Dec 2025 [Reported, ebook]. That day is the filing's due date for the final payment, not a receipt
 - Khatib NS14. Yishun NS13 is 1 stop. Orchard is 8 stops. Raffles Place is 12 stops, not 13 [Confirmed]
 - Walk under 6 minutes, fully sheltered, is the ebook's claim. Not measured here [Reported]
@@ -429,7 +430,7 @@ Each fact is labelled Confirmed (HDB, LTA, a company filing, or a named news rep
         '"nameStatus":"Reported","aliases":' + __import__("json").dumps(ALIASES) + ','
         '"homes":{"value":875,"label":"Reported","alsoReported":860},'
         '"nearestMrt":"Khatib NS14","stopsToRafflesPlace":12,'
-        '"launch":{"value":"end January 2027","label":"Reported"},'
+        '"launch":{"value":"end January 2027","label":"Reported","alsoReported":"Q1 2027 target (The Star 25 Mar 2026; EdgeProp Malaysia 22 Oct 2026)"},'
         '"operator":{"name":"Jack Leow","cea":"R074023I","agency":"PropNex Realty Pte Ltd","licence":"L3008022J","phone":"+6580621538"}}\n',
         encoding="utf-8")
     (ROOT / "robots.txt").write_text(

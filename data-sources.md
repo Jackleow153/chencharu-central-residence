@@ -20,6 +20,7 @@ When a figure changes: update `ops/chencharu_pages.py` (and `ops/build-chencharu
 | 875 homes, 11 blocks of 12 storeys. Sizes 527 to 1,389 sq ft. Guide prices from about $1.3, $1.8, $2.3 and $2.8 million by bedroom group | Reported | PropNex agency ebook, file-dated 16 Nov 2026. Not a developer price list. The developer has not released blocks or storeys |
 | 99 years from 24 Dec 2025 | Reported | Ebook. That day is the filing’s due date for the final payment, not a receipt |
 | Launch at the end of January 2027 | Reported | Ebook. Not a developer sales notice |
+| Launch targeted for early 2027 / the first quarter of 2027 | Reported | The Star, 25 Mar 2026 (“due to launch early next year”, https://www.thestar.com.my/business/business-news/2026/03/25/gamuda-land-sets-sights-on-doubling-profit); EdgeProp Malaysia, 22 Oct 2026 (“targeted for launch in the first quarter of 2027”, https://www.edgeprop.my/content/1917964/gamuda-targets-rm7b-property-sales-rebound-fy2027). Neither attributes the date to a speaker or a filing. Both also give GDV RM6.6 billion; not published here (a single estimate, not a project fact) |
 | Showflat at Yishun Ring Road, 16 and 30 Jan 2027 | Reported | One agent page, marked TBC. Not in the ebook. Other write-ups disagree |
 | Within 450 m of Khatib MRT | Confirmed | Gamuda’s prospects paragraph, 29 Sep 2025. Not a survey by this guide |
 | Walk under 6 minutes, fully sheltered | Reported | Ebook. Not measured for this guide |
@@ -38,3 +39,4 @@ When a figure changes: update `ops/chencharu_pages.py` (and `ops/build-chencharu
 
 ## Change log
 - 2026-11-21: file created (Phase 1). Added: project name status (Reported) and tenure 99-year leasehold (Confirmed: Gamuda Berhad 29 Sep 2025, HDB sold-sites record). No other figure changed.
+- 2026-11-23: added launch target early 2027 / Q1 2027 (Reported: The Star 25 Mar 2026; EdgeProp Malaysia 22 Oct 2026) to /launch-date/, /facts/, /faq/, /news/, home key facts, schema, llms.txt, facts.json. The ebook's end-January 2027 window is unchanged.

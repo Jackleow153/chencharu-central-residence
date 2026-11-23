@@ -6,6 +6,35 @@ def article(eyebrow, h1, lede, inner):
 <p class="lede">{lede}</p>{byline()}</div></div>
 <div class="read article">{inner}</div>'''
 
+
+# ---- Launch-window sections (CLAUDE.md section 14). Pre-built and hidden: each renders NOTHING until its data is
+# filled in from a developer price list or a reported sales result, so no placeholder is ever published or indexed.
+# To go live: fill the dict, set "source" and "date" (e.g. "Developer price list, 16 Jan 2027"), set MODIFIED for the page,
+# rebuild. Prices are the developer's figures only; never an agency guide quantum or a masked figure (section 10).
+PRICE_LIST = {"source": "", "date": "", "rows": [
+    # ("2-bedroom", "527 to 678", "$1,3xx,000", "$2,4xx"),   # (type, size sq ft, from price, from psf) -- full figures only
+]}
+SALES = {"source": "", "date": "", "sold": None, "released": None, "avg_psf": None}
+
+def price_list_section():
+    if not (PRICE_LIST["rows"] and PRICE_LIST["source"] and PRICE_LIST["date"]):
+        return ""
+    trs = "".join(f'<tr><td>{t}</td><td>{sz}</td><td class="num">{pr}</td><td class="num">{psf}</td></tr>'
+                  for t, sz, pr, psf in PRICE_LIST["rows"])
+    return (f'<section id="price-list"><h2>Developer price list, {PRICE_LIST["date"]}</h2>'
+            f'<div class="tbl"><table><thead><tr><th>Type</th><th>Size (sq ft)</th><th class="num">From</th>'
+            f'<th class="num">From psf</th></tr></thead><tbody>{trs}</tbody>'
+            f'<caption>Source: {PRICE_LIST["source"]}. Prices change as units sell. Confirmed</caption></table></div></section>')
+
+def sales_section():
+    if not (SALES["sold"] and SALES["source"] and SALES["date"]):
+        return ""
+    share = f' of {SALES["released"]} released, about {round(100 * SALES["sold"] / SALES["released"])}%' if SALES["released"] else ""
+    psf = f' at an average of about ${SALES["avg_psf"]:,} psf' if SALES["avg_psf"] else ""
+    return (f'<section id="sales-results"><h2>Sales results</h2><p><strong>{SALES["sold"]:,} homes sold{share}{psf}'
+            f', as of {SALES["date"]}.</strong> Source: {SALES["source"]}. Balance units change daily; '
+            f'ask for the current list.</p></section>')
+
 PAGES = []
 
 PAGES.append(("/price/",
@@ -14,7 +43,7 @@ PAGES.append(("/price/",
 "Price",
 article("Price", "There is no developer price list yet.",
 "<strong>No developer price list has been released as of 18 November 2026. The land sold for $1,012,588,989.89, about $980 per square foot per plot ratio.</strong> A PropNex agency ebook prints guide prices from about $1.3 million for a two-bedroom. That is an agency guide, not a developer price list.",
-f'''<section><h2>The tender</h2>
+f'''{price_list_section()}{sales_section()}<section><h2>The tender</h2>
 <p>HDB awarded the Chencharu Close mixed commercial and residential site on 26 September 2025 to Evia MCS Pte Ltd, Gamuda (Singapore) Pte Ltd and H108 Pte Ltd. The Business Times described that consortium as entities of Evia Real Estate, Gamuda and Ho Lee Group. {C}</p>
 <div class="tbl"><table>
 <thead><tr><th>Bidder</th><th class="num">Price</th><th class="num">About psf ppr</th></tr></thead>
@@ -184,7 +213,7 @@ PAGES.append(("/launch-date/",
 "Chencharu Central Residences launch date: an agency ebook reports end January 2027. Preview and booking days are not yet confirmed by the developer itself.",
 "Launch date",
 article("Launch date", "End of January 2027 is a reported window, not a booking day.",
-"<strong>The ebook cover says “launching end January 2027”.</strong> It does not name a preview Saturday or a booking day. Pages that do are not consistent with each other.",
+"<strong>The ebook cover says “launching end January 2027”.</strong> Two Malaysian business papers, The Star (25 March 2026) and EdgeProp Malaysia (22 October 2026), report the same window as early 2027 and the first quarter of 2027. Neither names a preview Saturday or a booking day, and pages that do are not consistent with each other.",
 f'''<section><h2>Timeline that is on paper</h2>
 <ol class="tl">
 <li class="done"><time>26 Sep 2024</time><b>Tender launched</b> HDB put Chencharu Close out with the Sembawang Road executive condominium site. {C}</li>
@@ -192,7 +221,9 @@ f'''<section><h2>Timeline that is on paper</h2>
 <li class="done"><time>26 Sep 2025</time><b>Awarded</b> HDB accepted Evia MCS, Gamuda (Singapore) and H108 at $1,012,588,989.89. {C}</li>
 <li class="done"><time>29 Sep 2025</time><b>Gamuda announcement</b> Letter of award dated 26 September. The land is to be held through Polaris Times Square Residences Pte Ltd and Times Square Mall Pte Ltd. {C}</li>
 <li><time>24 Dec 2025</time><b>Final land payment fell due</b> Gamuda’s filing set 75% of the price, $759,442,000, due on this day. {C} The lease starts when the government receives the full price, and it excludes the bus-interchange and hawker-centre land. The ebook prints 99 years from this date. No receipt was in the documents checked here. {R}</li>
-<li><time>End Jan 2027</time><b>Ebook launch window</b> Not a published developer sales date. {R}</li>
+<li><time>25 Mar 2026</time><b>The Star: due to launch early next year</b> In a Gamuda Land profile, The Star describes the project as 875 private residences above commercial space, a hawker centre and a bus depot, “due to launch early next year”. The paper does not attribute the timing to a named person. {R}</li>
+<li><time>22 Oct 2026</time><b>EdgeProp Malaysia: targeted for the first quarter of 2027</b> Reporting on Gamuda’s results, EdgeProp says the Chencharu Close development is targeted for launch in the first quarter of 2027. The sentence is not attributed to a speaker or a filing. {R}</li>
+<li><time>End Jan 2027</time><b>Ebook launch window</b> Inside the first quarter that both papers report. Not a published developer sales date. {R}</li>
 <li><time>Sep 2032</time><b>End of HDB’s 84-month completion period</b> Counted from acceptance on 26 September 2025. This is the contractual period for the project, not a residential TOP date. No TOP was found on the HDB award page. {C}</li>
 </ol>
 </section>
@@ -349,6 +380,7 @@ f'''<section>
 <tr><td>875 homes, 11 blocks of 12 storeys. Sizes 527 to 1,389 sq ft. Guide prices from about $1.3, $1.8, $2.3 and $2.8 million by bedroom group</td><td>{R}</td><td>PropNex agency ebook, file-dated 16 Nov 2026. Not a developer price list. The developer has not released blocks or storeys</td></tr>
 <tr><td>99 years from 24 Dec 2025</td><td>{R}</td><td>Ebook. That day is the filing’s due date for the final payment, not a receipt</td></tr>
 <tr><td>Launch at the end of January 2027</td><td>{R}</td><td>Ebook. Not a developer sales notice</td></tr>
+<tr><td>Launch targeted for early 2027 / the first quarter of 2027</td><td>{R}</td><td>The Star, 25 Mar 2026; EdgeProp Malaysia, 22 Oct 2026. Neither attributes the date to a speaker or a filing. Not a developer sales notice</td></tr>
 <tr><td>Showflat at Yishun Ring Road, 16 and 30 Jan 2027</td><td>{R}</td><td>One agent page, marked TBC. Not in the ebook. Other write-ups disagree</td></tr>
 <tr><td>Within 450 m of Khatib MRT</td><td>{C}</td><td>Gamuda’s prospects paragraph, 29 Sep 2025. Not a survey by this guide</td></tr>
 <tr><td>Walk under 6 minutes, fully sheltered</td><td>{R}</td><td>Ebook. Not measured for this guide</td></tr>
@@ -376,7 +408,7 @@ PAGES.append(("/faq/",
 article("FAQ", "Short answers. The ledger has the sources.",
 "<strong>This is not the official project website.</strong> HDB sold the land. A developer price list was not found on 18 November 2026.",
 f'''<div class="faq">
-<details open><summary>When does it launch?</summary><p>The PropNex ebook says the end of January 2027. It does not name a booking day. A 16 January preview and a 30 January booking day are one agent’s TBC dates, and other write-ups do not share them. {R}</p></details>
+<details open><summary>When does it launch?</summary><p>The PropNex ebook says the end of January 2027, and The Star (March 2026) and EdgeProp Malaysia (October 2026) report a launch target of early 2027, the first quarter. None names a booking day. A 16 January preview and a 30 January booking day are one agent’s TBC dates, and other write-ups do not share them. {R}</p></details>
 <details><summary>What is the price?</summary><p>No developer price list. The land was $1,012,588,989.89, about $980 psf ppr. The PropNex agency ebook prints guide prices from about $1.3 million for the two-bedroom group. That is an agency guide, not a developer price list. {R}</p></details>
 <details><summary>Who is the developer?</summary><p>HDB awarded the site to Evia MCS Pte Ltd, Gamuda (Singapore) Pte Ltd and H108 Pte Ltd. Gamuda’s filing gives Gamuda (Singapore) 50%, Evia MCS 30% and H108 20% of Polaris Times Square Residences and of Times Square Mall. Ho Lee Group holds 30 of H108’s 100 shares. It is not a one-third partner. {C}</p></details>
 <details><summary>What is the tenure?</summary><p>99-year leasehold. The lease starts when the government receives the full land price, and it excludes the bus interchange and hawker centre land. {C}</p></details>
@@ -439,6 +471,7 @@ f'''<section><ol class="tl">
 <li><time>4 Nov 2026</time><b>HDB launches Chencharu Acres</b> A fifth Chencharu BTO, in the November 2026 exercise. CNA reported the launch. {C} Write-ups put the project at 1,582 flats. That count is not added into a precinct total here. {R}</li>
 <li><time>11 Dec 2025</time><b>HDB publishes the Chencharu environmental study</b> About 7 hectares along Yishun Avenue 1. No area of high ecological value. Feedback ran to 7 January 2026. {C} The report expects clearance in the third quarter of 2026, after further approvals. The Straits Times said late 2026. {R}</li>
 <li><time>17 Nov 2026</time><b>The ebook was checked against HDB, Business Times and LTA</b> The 13-stop claim and the corridor timing were not adopted. Guide quanta stay labelled as guide quanta.</li>
+<li><time>22 Oct 2026</time><b>EdgeProp Malaysia: first-quarter 2027 target</b> The Chencharu Close development is reported as targeted for launch in the first quarter of 2027, matching The Star’s “early next year” of 25 March 2026. Not a developer sales notice. {R}</li>
 <li><time>16 Nov 2026</time><b>PropNex ebook file date</b> Unit table, guide quanta, facilities list, end-January 2027 window. {R}</li>
 <li><time>Sep 2026</time><b>LTA revises the North-South Corridor</b> Viaduct phases from 2029. Tunnel to the ECP from 2031. {C}</li>
 <li><time>26 Sep 2025</time><b>HDB awards Chencharu Close</b> $1,012,588,989.89. {C}</li>
