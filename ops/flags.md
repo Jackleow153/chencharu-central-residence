@@ -7,6 +7,7 @@ Conflicts and open questions with no proposed change yet (CLAUDE.md section 13).
 - 2026-11-21 · **Homes: 875 vs about 860.** HDB's estimate and the ebook say 875; Evia told The Business Times about 860 (Sep 2025). Both stay Reported until the developer publishes one number.
 - 2026-11-21 · **Preview / booking dates** (16 and 30 Jan 2027) appear on one agent page as TBC and conflict with other write-ups. No `Event` schema until Confirmed.
 - 2026-11-21 · **Walk to Khatib MRT**: sources conflict (within 450 m per Gamuda; under 6 minutes per the ebook; 330-350 m and 460 m on other pages). Needs Jack's timed walk.
+  - 2026-11-24: Gamuda Land's own news page ("Beyond borders", 24 Apr 2026, credited to CNA, https://www.gamudaland.com.my/news/beyond-borders-gamuda-land-advances-regional-growth-strategy-to-double-earnings) describes the project "with direct connectivity to Khatib MRT station". Not repeated on the site: it does not say whether that means a covered or underground link, and Gamuda's filing says "within 450 m". Ask the developer at the preview whether there is a direct link.
 - 2026-11-21 · **Developer's sales licence.** One agent page (dated 10 Oct 2026) says a developer's licence was issued on 30 Sep 2026. Not a source (section 5). Check URA's developer licence records before stating it; no change made.
 
 ## Closed
