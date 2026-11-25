@@ -12,11 +12,11 @@ PUBLISHED = "2026-11-18"
 # dateModified / sitemap lastmod per page: bump only when that page's content materially changes (CLAUDE.md section 6)
 MODIFIED = {"/": "2026-11-25", "/price/": "2026-11-21", "/facts/": "2026-11-25", "/faq/": "2026-11-25",
             "/location/": "2026-11-25", "/bus-interchange-hawker-centre/": "2026-11-25", "/vs-chencharu-bto/": "2026-11-25",
-            "/launch-date/": "2026-11-23", "/news/": "2026-11-23",
+            "/launch-date/": "2026-11-23", "/news/": "2026-11-25", "/facilities/": "2026-11-25",
             "/register/": "2026-11-21", "/review/": "2026-11-25",
             "/privacy/": "2026-11-22"}
 INDEXNOW_KEY = "5d0c7a91e4b24f3c8a6e2b17f9d4c380"
-ALIASES = ["Chencharu Close GLS", "Chencharu Close condo", "Chencharu Close Residences", "Chencharu condo",
+ALIASES = ["Chencharu Central", "Chencharu Close GLS", "Chencharu Close condo", "Chencharu Close Residences", "Chencharu condo",
            "Chencharu Close Residence", "Chencharu integrated development", "Khatib integrated condo",
            "Khatib new launch condo", "Chencharu Grand Residences", "Yishun new launch 2027"]
 AKA = ", ".join(ALIASES[:-1]) + " and " + ALIASES[-1]
@@ -86,7 +86,7 @@ def faq_ld(body):
 PROJECT_LD = {
     "@type": ["ApartmentComplex", "Residence"], "@id": HOST + "/#project",
     "name": "Chencharu Central Residences", "alternateName": ALIASES,
-    "description": ("Reported marketing name, not yet confirmed by the developer, for the 99-year leasehold mixed-use development "
+    "description": ("Reported marketing name for the condo, not yet confirmed by the developer (Gamuda Land lists the project as Chencharu Central), for the 99-year leasehold mixed-use development "
                     "at Chencharu Close, Yishun (District 27), Singapore. HDB awarded the site on 26 September 2025 to Evia MCS, "
                     "Gamuda (Singapore) and H108. Homes are planned above a bus interchange, a hawker centre and shops, within "
                     "450 m of Khatib MRT (NS14). HDB estimated about 875 homes; the developer has not confirmed a number."),
@@ -289,7 +289,7 @@ HOME = f'''
 </div>
 <p class="trust"><span>Every figure labelled</span><span>CEA R074023I</span><span>PropNex Realty Pte Ltd</span><span>No countdown, no popup</span></p>
 <div class="tbl keyfacts"><table class="ledger"><caption>Key facts, checked {CHECKED}</caption><tbody>
-<tr><th scope="row">Name</th><td>Chencharu Central Residences, the marketing name in use. Not yet confirmed by the developer. {R}</td></tr>
+<tr><th scope="row">Name</th><td>Chencharu Central Residences, the marketing name in use. Gamuda Land, one of the developers, lists the project as “Chencharu Central” on its website (checked 25 November 2026). The full name is not yet confirmed. {R}</td></tr>
 <tr><th scope="row">Also known as</th><td>{AKA}.</td></tr>
 <tr><th scope="row">Tenure</th><td>99-year leasehold. The lease excludes the bus interchange and hawker centre land. {C}</td></tr>
 <tr><th scope="row">Land price</th><td>$1,012,588,989.89, about $980 psf ppr, awarded by HDB on 26 September 2025. {C}</td></tr>
@@ -381,7 +381,7 @@ def main():
 
 > Independent English guide to the mixed-use project marketed as Chencharu Central Residences at Chencharu Close, Yishun, District 27. Not the developer. No developer price list as of 18 November 2026. Written by Jack Leow, CEA R074023I, PropNex Realty Pte Ltd (Licence L3008022J).
 
-Name status: "Chencharu Central Residences" is the marketing name in use. It is Reported, not yet confirmed by the developer, HDB or a Gamuda filing.
+Name status: "Chencharu Central Residences" is the marketing name in use. It is Reported, not yet confirmed by the developer, HDB or a Gamuda filing. Gamuda Land, one of the three developer groups, lists the project as "Chencharu Central" (no "Residences") on its developments page, checked 25 Nov 2026 [Confirmed as the company's usage].
 Also known as: {AKA}.
 
 Each fact is labelled Confirmed (HDB, LTA, a company filing, or a named news report), Reported (agency guide or one third-party report) or Estimate (arithmetic or an analyst comment).
@@ -403,6 +403,7 @@ Each fact is labelled Confirmed (HDB, LTA, a company filing, or a named news rep
 - Lease start 24 Dec 2025 [Reported, ebook]. That day is the filing's due date for the final payment, not a receipt
 - Khatib NS14. Yishun NS13 is 1 stop. Orchard is 8 stops. Raffles Place is 12 stops, not 13 [Confirmed]
 - Walk under 6 minutes, fully sheltered, is the ebook's claim. Not measured here [Reported]
+- Gamuda Land's project page (gamudaland.com.my, checked 25 Nov 2026), titled "Chencharu Central": up to 875 residential units, 12,600 sq m of commercial space, "5-minutes to Khatib MRT" (mode not stated), an integrated bus interchange, and a BCA Green Mark Platinum Super Low Energy (SLE) rating. No BCA certificate for the project found by this guide [Confirmed as the company's statement]
 - LTA, September 2026: North-South Corridor viaduct phases from 2029; tunnel from Lentor to the ECP from 2031. A 30-minute claim is not used [Confirmed]
 - Showflat address: not in the ebook [Reported]
 - Chencharu precinct: about 70 hectares, about 10,000 homes by 2040, at least 80% public housing. Chencharu Link is a 400-metre bus-only road. The bungalow at 50 Bah Soon Pah Road is to be adapted for community use in a new park [Confirmed, CNA, 12 Jun 2024, quoting HDB]

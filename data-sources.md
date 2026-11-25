@@ -5,7 +5,7 @@ When a figure changes: update `ops/chencharu_pages.py` (and `ops/build-chencharu
 
 | Fact | Status | Source |
 |---|---|---|
-| Project name “Chencharu Central Residences” | Reported | Marketing name in the PropNex agency ebook, 16 Nov 2026. Not yet confirmed by the developer, HDB or a Gamuda filing. Also used: Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu integrated development, Khatib integrated condo, Yishun new launch 2027 |
+| Project name “Chencharu Central Residences” | Reported | Marketing name in the PropNex agency ebook, 16 Nov 2026. Gamuda Land’s developments page lists the project as “Chencharu Central” (no “Residences”), checked 25 Nov 2026, https://www.gamudaland.com.my/developments/township/chencharu-central (the earlier URL /township/chencharu-close now returns 404). The condo’s full name is not yet confirmed by the developer, HDB or a Gamuda filing. Also used: Chencharu Central, Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu integrated development, Khatib integrated condo, Yishun new launch 2027 |
 | Tenure: 99-year leasehold | Confirmed | Gamuda Berhad, 29 Sep 2025; HDB’s sold-sites record |
 | Site awarded 26 Sep 2025 for $1,012,588,989.89 to Evia MCS, Gamuda (Singapore) and H108 | Confirmed | HDB award note |
 | Site area 29,450.3 sq m; height 61 m SHD; about 875 homes, number may vary. Maximum GFA quoted as 96,008 sq m on the award note and 96,007 sq m in Gamuda’s filing | Confirmed | HDB award note; Gamuda Berhad, 29 Sep 2025 |
@@ -24,6 +24,7 @@ When a figure changes: update `ops/chencharu_pages.py` (and `ops/build-chencharu
 | Showflat at Yishun Ring Road, 16 and 30 Jan 2027 | Reported | One agent page, marked TBC. Not in the ebook. Other write-ups disagree |
 | Within 450 m of Khatib MRT | Confirmed | Gamuda’s prospects paragraph, 29 Sep 2025. Not a survey by this guide |
 | Walk under 6 minutes, fully sheltered | Reported | Ebook. Not measured for this guide |
+| Gamuda Land project page “Chencharu Central”: up to 875 homes, 12,600 sq m commercial, “5-minutes to Khatib MRT” (mode not stated), integrated bus interchange, BCA Green Mark Platinum Super Low Energy (SLE) rating, designed in line with Green Plan 2030 | Confirmed (as the company’s statement) | https://www.gamudaland.com.my/developments/township/chencharu-central, checked 25 Nov 2026. No BCA certificate for the project found; no page date |
 | 40 stalls, about 720 seats, air-conditioned interchange, facility list, P&T, Tinderbox, Index Design | Reported | Ebook only |
 | About 70 hectares, about 10,000 homes by 2040, at least 80% public housing. Chencharu Link is a 400 m bus-only road. Bungalow at 50 Bah Soon Pah Road kept for community use in a new park | Confirmed | CNA, 12 Jun 2024, quoting HDB. The Business Times the same day. Gamuda repeats the 10,000 homes |
 | Planned educational institution and nursing home | Reported | Mothership, 12 Jun 2024, citing HDB’s release. Not in CNA’s account of the same day |
@@ -40,3 +41,4 @@ When a figure changes: update `ops/chencharu_pages.py` (and `ops/build-chencharu
 ## Change log
 - 2026-11-21: file created (Phase 1). Added: project name status (Reported) and tenure 99-year leasehold (Confirmed: Gamuda Berhad 29 Sep 2025, HDB sold-sites record). No other figure changed.
 - 2026-11-23: added launch target early 2027 / Q1 2027 (Reported: The Star 25 Mar 2026; EdgeProp Malaysia 22 Oct 2026) to /launch-date/, /facts/, /faq/, /news/, home key facts, schema, llms.txt, facts.json. The ebook's end-January 2027 window is unchanged.
+- 2026-11-25: Gamuda Land’s developments page lists the project as “Chencharu Central” (https://www.gamudaland.com.my/developments/township/chencharu-central, checked 25 Nov 2026). Added as an alias and noted in the name status (name stays Reported; no rename). Added the page’s “5-minutes to Khatib MRT” and BCA Green Mark Platinum SLE rating as the company’s statements on /facts/, /facilities/, /location/, /faq/, /news/, home, schema, llms.txt, facts.json.
