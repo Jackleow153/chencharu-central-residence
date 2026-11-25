@@ -53,10 +53,10 @@ Rewording what portals already say is not information gain.
 
 - Treat "Chencharu Central Residences" as **Reported** until the developer confirms it. Show the name's status in the fact ledger.
 - **Aliases** (`ALIASES` in `ops/build-chencharu.py`): Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu Close Residence, Chencharu integrated development, Khatib integrated condo, Khatib new launch condo, Chencharu Grand Residences (an agent marketing name, never used by the developer), Yishun new launch 2027.
-- **Titles and H1s** pair the reported name with the names people actually search (Google SG autocomplete, 25 Nov 2026): "Chencharu Close condo", "Chencharu condo", "Khatib". Google suggests nothing after "chencharu central residences", so never drop the searched names from titles while the name is unconfirmed. H1s lead with the topic, then the editorial line.
   - Put them in one "Also known as" line on the home page.
   - Add one FAQ entry for them.
   - List them in schema `alternateName`.
+- **Titles and H1s** pair the reported name with the names people actually search (Google SG autocomplete, 25 Nov 2026): "Chencharu Close condo", "Chencharu condo", "Khatib". Google suggests nothing after "chencharu central residences", so never drop the searched names from titles while the name is unconfirmed. H1s lead with the topic, then the editorial line.
 - **Rename protocol.** The moment the developer confirms the official name, or a different name, do all of this in the same run:
   - Update the title tags, H1s, schema `name`, meta descriptions, `llms.txt` and FAQ.
   - Keep every previous name as an alias ("previously referred to as…").
