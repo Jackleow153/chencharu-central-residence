@@ -52,7 +52,8 @@ Rewording what portals already say is not information gain.
 ### C. Name and entity protocol (critical for this project)
 
 - Treat "Chencharu Central Residences" as **Reported** until the developer confirms it. Show the name's status in the fact ledger.
-- **Aliases:** Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu integrated development, Khatib integrated condo, Yishun new launch 2027.
+- **Aliases** (`ALIASES` in `ops/build-chencharu.py`): Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu Close Residence, Chencharu integrated development, Khatib integrated condo, Khatib new launch condo, Chencharu Grand Residences (an agent marketing name, never used by the developer), Yishun new launch 2027.
+- **Titles and H1s** pair the reported name with the names people actually search (Google SG autocomplete, 25 Nov 2026): "Chencharu Close condo", "Chencharu condo", "Khatib". Google suggests nothing after "chencharu central residences", so never drop the searched names from titles while the name is unconfirmed. H1s lead with the topic, then the editorial line.
   - Put them in one "Also known as" line on the home page.
   - Add one FAQ entry for them.
   - List them in schema `alternateName`.
@@ -88,11 +89,12 @@ Map each intent to ONE existing page and record the mapping in `ops/seo-map.md`.
 | price, price list, psf, how much | Price |
 | floor plan, 2/3/4/5 bedroom, unit mix, sizes | Floor plans and unit mix |
 | site plan, facilities, blocks | Site plan / Facilities |
-| integrated development, mall, bus interchange, hawker centre, podium | Podium / integrated hub (create only if no page covers this yet) |
+| integrated development, mall, bus interchange, hawker centre, podium, chencharu bus interchange completion date | `/bus-interchange-hawker-centre/` (live 25 Nov 2026) |
 | showflat, preview, launch date, booking | Showflat / Launch date |
 | balance units, sales results, how many sold | Balance units (create at launch) |
 | review, worth buying, pros and cons | Review |
-| vs north park residences, vs chencharu BTO, vs EC, vs Lentor launches | Comparison pages (one per distinct comparison, only with real analysis) |
+| vs chencharu BTO, chencharu bto price | `/vs-chencharu-bto/` (live 25 Nov 2026; update BTO prices with each Chencharu BTO launch) |
+| vs north park residences, vs EC, vs Lentor launches | Comparison pages (one per distinct comparison, only with real analysis) |
 | schools within 1km, Khatib MRT distance, location | Schools / Location and MRT |
 | developer, Evia, Gamuda Land, Ho Lee | Developer |
 | chencharu close GLS, tender price, land rate | GLS / land page or Developer |
@@ -198,7 +200,7 @@ Map each intent to ONE existing page and record the mapping in `ops/seo-map.md`.
 
 1. Read this file, `data-sources.md`, `ops/flags.md` and `seo-backlog.md`.
 2. **Research** the latest on this project: official name, developer announcements, Gamuda Bursa filings, HDB updates, preview / showflat / launch dates, price list and psf, floor plans and unit mix, podium / bus interchange / hawker centre details, units sold and balance units, TOP / completion, news. Search under every name and alias in section 3C.
-3. **Name check:** if an official name is confirmed or has changed, run the rename protocol (section 3C).
+3. **Name check:** if an official name is confirmed or has changed, run the rename protocol (section 3C). Also look for the name on primary records: the developer's housing developer licence (one report says it was issued on 30 September 2026) and URA's developer sales records. A name on a licence or URA record counts as confirmed by a primary source.
 4. **Compare** with what the site currently says.
 5. **Verify** every difference per section 5.
 6. **Apply** verified changes: page content, fact ledger, key facts table, schema, FAQ, `llms.txt`, `data-sources.md`, dates and `lastmod` (per section 6).

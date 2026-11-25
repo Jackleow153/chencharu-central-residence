@@ -38,10 +38,10 @@ def sales_section():
 PAGES = []
 
 PAGES.append(("/price/",
-"Chencharu Central Residences Price: Land Bid and Guide Prices",
+"Chencharu Close Condo Price: Chencharu Central Residences",
 "Chencharu Central Residences price: land sold at about $980 psf ppr. Agency guide prices from about $1.3 million are not a developer price list as yet.",
 "Price",
-article("Price", "There is no developer price list yet.",
+article("Price", "Chencharu Close condo price: there is no developer price list yet.",
 "<strong>No developer price list has been released as of 18 November 2026. The land sold for $1,012,588,989.89, about $980 per square foot per plot ratio.</strong> A PropNex agency ebook prints guide prices from about $1.3 million for a two-bedroom. That is an agency guide, not a developer price list.",
 f'''{price_list_section()}{sales_section()}<section><h2>The tender</h2>
 <p>HDB awarded the Chencharu Close mixed commercial and residential site on 26 September 2025 to Evia MCS Pte Ltd, Gamuda (Singapore) Pte Ltd and H108 Pte Ltd. The Business Times described that consortium as entities of Evia Real Estate, Gamuda and Ho Lee Group. {C}</p>
@@ -79,10 +79,10 @@ f'''{price_list_section()}{sales_section()}<section><h2>The tender</h2>
 "/price/"))
 
 PAGES.append(("/floor-plans/",
-"Chencharu Central Residences Floor Plans and Unit Mix",
+"Chencharu Condo Floor Plans & Unit Mix (Chencharu Central)",
 "Chencharu Central Residences unit mix: about 875 homes in nine reported types, 527 to 1,389 sq ft, from an agency ebook. No official floor plans as yet.",
 "Floor plans",
-article("Floor plans", "No official floor plans have been released.",
+article("Floor plans", "Chencharu condo floor plans: no official plans have been released.",
 "<strong>The only unit table in hand is from a PropNex ebook, and it is marked subject to change.</strong> It lists 875 homes in nine types, from 527 to 1,389 sq ft. It is not a set of floor plans.",
 f'''<section><h2>The nine reported types</h2>
 <div class="tbl"><table>
@@ -116,10 +116,10 @@ f'''<section><h2>The nine reported types</h2>
 "/floor-plans/"))
 
 PAGES.append(("/site-plan/",
-"Chencharu Central Residences Site Plan, Blocks and Podium",
+"Chencharu Close Site Plan, Blocks & Podium",
 "Chencharu Close site plan: a 29,450 sq m site, 96,007 sq m maximum GFA, homes above shops, a hawker centre and a bus interchange. Blocks not yet confirmed.",
 "Site plan",
-article("Site plan", "The site plan that matters is the GFA split.",
+article("Site plan", "Chencharu Close site plan: the plan that matters is the GFA split.",
 "<strong>HDB’s site is 29,450.3 square metres, with a 61-metre height limit.</strong> Gamuda’s filing sets the maximum gross floor area at 96,007 square metres. At least 74,507 square metres has to be homes. Shops are capped. A bus interchange and a hawker centre are required.",
 f'''<section><h2>What the award documents fix</h2>
 <div class="tbl"><table class="ledger"><tbody>
@@ -142,10 +142,10 @@ f'''<section><h2>What the award documents fix</h2>
 "/site-plan/"))
 
 PAGES.append(("/location/",
-"Chencharu Central Residences Location and Khatib MRT",
+"Chencharu Close Condo Location: Khatib MRT (NS14)",
 "Chencharu Central Residences location: Chencharu Close, Yishun (D27), within 450 m of Khatib MRT (NS14). Orchard is 8 stops; Raffles Place is 12 stops.",
 "Location",
-article("Location", "Khatib is one stop from Yishun. The city is further than some guides say.",
+article("Location", "Chencharu Close location: Khatib is one stop from Yishun, and the city is further than some guides say.",
 "<strong>The site is at Chencharu Close, Yishun, District 27.</strong> The nearest MRT named by every serious source is Khatib, NS14, on the North-South Line.",
 f'''<section><h2>Stops you can count</h2>
 <p>Station numbers below are the North-South Line codes. Orchard is NS22, so Khatib to Orchard is 8 stops. Raffles Place is NS26, so Khatib to Raffles Place is 12 stops. The PropNex ebook says 13. This guide uses 12. {C}</p>
@@ -156,6 +156,9 @@ f'''<section><h2>Stops you can count</h2>
 <li><b>NS26</b><span>Raffles Place, 12 stops south. {C}</span></li>
 </ol>
 <p>The walk itself is not a surveyed distance. Gamuda’s 29 September 2025 filing says the site is within 450 metres of Khatib MRT. {C} The ebook says a fully sheltered walk of under 6 minutes. Another project site says about 330 to 350 metres. A listing has used about 460 metres. This guide did not measure the path, and it does not turn the minutes into metres. The sheltered link is part of a project that is not built. {R}</p>
+</section>
+<section><h2>Khatib new launch: where this condo sits</h2>
+<p>If you are looking for a new condo near Khatib MRT, this is the private project at Chencharu Close. Gamuda’s filing puts the site within 450 metres of Khatib (NS14). {C} The launch is reported for the end of January 2027. {R} It sits over a bus interchange and a hawker centre that HDB required on the land: see <a href="/bus-interchange-hawker-centre/">the bus interchange and hawker centre</a>.</p>
 </section>
 <section><h2>The North-South Corridor has moved</h2>
 <p>The ebook says the corridor opens from 2029 and aims to cut northern journeys by up to 30 minutes. That is not the timeline LTA published in September 2026.</p>
@@ -182,10 +185,10 @@ f'''<section><h2>Stops you can count</h2>
 "/location/"))
 
 PAGES.append(("/showflat/",
-"Chencharu Central Residences Showflat",
+"Chencharu Central Residences Showflat: Location & Preview",
 "Chencharu Central Residences showflat: no confirmed address as of 18 Nov 2026. One agent page says Yishun Ring Road, near Wisteria Mall, and marks it TBC.",
 "Showflat",
-article("Showflat", "There is no confirmed showflat address.",
+article("Showflat", "Chencharu Central Residences showflat: there is no confirmed address yet.",
 "<strong>The PropNex ebook does not name a gallery, a road, or an appointment date.</strong> One Huttons page, updated 15 November 2026, says a showflat along Yishun Ring Road opposite Wisteria Mall, and marks both the address and the dates TBC.",
 f'''<section><h2>What is actually said</h2>
 <div class="tbl"><table class="ledger"><tbody>
@@ -209,10 +212,10 @@ f'''<section><h2>What is actually said</h2>
 "/showflat/"))
 
 PAGES.append(("/launch-date/",
-"Chencharu Central Residences Launch Date",
+"Chencharu Close Condo Launch Date: Chencharu Central Residences",
 "Chencharu Central Residences launch date: an agency ebook reports end January 2027. Preview and booking days are not yet confirmed by the developer itself.",
 "Launch date",
-article("Launch date", "End of January 2027 is a reported window, not a booking day.",
+article("Launch date", "Chencharu Central Residences launch date: end January 2027 is a reported window, not a booking day.",
 "<strong>The ebook cover says “launching end January 2027”.</strong> Two Malaysian business papers, The Star (25 March 2026) and EdgeProp Malaysia (22 October 2026), report the same window as early 2027 and the first quarter of 2027. Neither names a preview Saturday or a booking day, and pages that do are not consistent with each other.",
 f'''<section><h2>Timeline that is on paper</h2>
 <ol class="tl">
@@ -234,10 +237,10 @@ f'''<section><h2>Timeline that is on paper</h2>
 "/launch-date/"))
 
 PAGES.append(("/facilities/",
-"Chencharu Central Residences Facilities",
+"Chencharu Central Residences Facilities and Podium",
 "Chencharu Central Residences facilities: HDB requires a bus interchange, a hawker centre and shops. Club facilities like a 50 m pool are from an ebook.",
 "Facilities",
-article("Facilities", "Separate the podium HDB required from the club list in the ebook.",
+article("Facilities", "Chencharu Central Residences facilities: separate the podium HDB required from the ebook’s club list.",
 "<strong>A bus interchange, a hawker centre and commercial space are conditions of the land.</strong> The 50-metre pool, the gym and the courts are a list in the PropNex ebook, marked subject to change.",
 f'''<section><h2>On the land sale</h2>
 <ul>
@@ -267,10 +270,10 @@ f'''<section><h2>On the land sale</h2>
 "/facilities/"))
 
 PAGES.append(("/schools/",
-"Schools near Chencharu Central Residences",
+"Schools Near Chencharu Close Condo: Peiying, Naval Base",
 "Schools near Chencharu Close named in press reports: Peiying Primary, Naval Base Primary and Secondary, Chung Cheng High (Yishun). Distances unmeasured.",
 "Schools",
-article("Schools", "Names are published. Walking distances are not.",
+article("Schools", "Schools near Chencharu Close: the names are published, the walking distances are not.",
 "<strong>No source checked for this guide gives a measured distance from the site boundary to a school gate.</strong> A primary-school distance priority is a MOE rule applied to a finished address. This project has no postal address yet.",
 f'''<section><h2>Named by PropNex research in The Business Times</h2>
 <p>On 11 September 2025 Wong Siew Ying, PropNex head of research, listed these as near the Chencharu Close plot. The article does not say “within 1 km”. {C}</p>
@@ -291,10 +294,10 @@ f'''<section><h2>Named by PropNex research in The Business Times</h2>
 "/schools/"))
 
 PAGES.append(("/review/",
-"Chencharu Central Residences Review",
+"Chencharu Central Residences Review: Pros, Cons, Who It Suits",
 "Independent Chencharu Central Residences review: the bus interchange and hawker podium is the real difference, and the price is not proven. Pros and cons.",
 "Review",
-article("Review", "Worth shortlisting for own-stay. Not worth pricing off a guide quantum.",
+article("Review", "Chencharu Central Residences review: worth shortlisting for own-stay, not worth pricing off a guide quantum.",
 "<strong>Buyers who want daily uses under a new private home in Yishun have a real product here.</strong> Buyers who need a number to underwrite should wait. The land fact is solid. The selling price is not.",
 f'''<section>
 <div class="pc"><div class="pro"><h3>What holds up</h3><ul>
@@ -328,10 +331,10 @@ f'''<section>
 "/review/"))
 
 PAGES.append(("/developer/",
-"Chencharu Central Residences Developer",
+"Chencharu Close Developer: Gamuda Land, Evia & Ho Lee",
 "Chencharu Central Residences developer: Gamuda (Singapore) 50%, Evia MCS 30% and H108 20%, per Gamuda's Bursa filing. HDB awarded the site on 26 Sep 2025.",
 "Developer",
-article("Developer", "Three tenderers. The filing sets the shares.",
+article("Developer", "Chencharu Close developer: Gamuda Land, Evia and Ho Lee. The filing sets the shares.",
 "<strong>The successful tenderers on HDB’s award are Evia MCS Pte Ltd, Gamuda (Singapore) Pte Ltd and H108 Pte Ltd.</strong> Gamuda’s exchange filing then says who owns the two companies that take the land.",
 f'''<section><h2>Who holds the land</h2>
 <p>Gamuda Berhad’s announcement of 29 September 2025 says the letter of award is dated 26 September 2025, and the land will be acquired through Polaris Times Square Residences Pte Ltd and Times Square Mall Pte Ltd. Both companies were incorporated on 23 September 2025. Each has the same shareholders. {C}</p>
@@ -356,16 +359,16 @@ f'''<section><h2>Who holds the land</h2>
 "/developer/"))
 
 PAGES.append(("/facts/",
-"Chencharu Central Residences Fact Ledger",
+"Chencharu Central Residences Fact Ledger: Sources & Labels",
 "Chencharu Central Residences fact ledger: every figure on this guide with its source and a Confirmed, Reported or Estimate label, plus the name status.",
 "Fact ledger",
-article("Fact ledger", "If a row has no second source, it stays Reported.",
+article("Fact ledger", "Chencharu Central Residences fact ledger: a row without a second source stays Reported.",
 "<strong>The name Chencharu Central Residences is Reported, not confirmed. What is confirmed: HDB sold the 99-year leasehold site on 26 September 2025 for $1,012,588,989.89, about $980 psf ppr.</strong> Confirmed means HDB, LTA, Gamuda’s exchange announcement, or a named article in The Business Times. The PropNex ebook is an agency guide. Its figures stay Reported even where other agent sites repeat them.",
 f'''<section>
 <div class="tbl"><table>
 <thead><tr><th>Fact</th><th>Status</th><th>Source</th></tr></thead>
 <tbody>
-<tr><td>Project name “Chencharu Central Residences”</td><td>{R}</td><td>Marketing name in the PropNex agency ebook, 16 Nov 2026. Not yet confirmed by the developer, HDB or a Gamuda filing. Also used: Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu integrated development, Khatib integrated condo, Yishun new launch 2027</td></tr>
+<tr><td>Project name “Chencharu Central Residences”</td><td>{R}</td><td>Marketing name in the PropNex agency ebook, 16 Nov 2026. Not yet confirmed by the developer, HDB or a Gamuda filing. Also used: {AKA}. “Chencharu Grand Residences” appears on an agent marketing site; the developer has not used it</td></tr>
 <tr><td>Tenure: 99-year leasehold</td><td>{C}</td><td>Gamuda Berhad, 29 Sep 2025; HDB’s sold-sites record</td></tr>
 <tr><td>Site awarded 26 Sep 2025 for $1,012,588,989.89 to Evia MCS, Gamuda (Singapore) and H108</td><td>{C}</td><td>HDB award note</td></tr>
 <tr><td>Site area 29,450.3 sq m; height 61 m SHD; about 875 homes, number may vary. Maximum GFA quoted as 96,008 sq m on the award note and 96,007 sq m in Gamuda’s filing</td><td>{C}</td><td>HDB award note; Gamuda Berhad, 29 Sep 2025</td></tr>
@@ -402,17 +405,19 @@ f'''<section>
 "/facts/"))
 
 PAGES.append(("/faq/",
-"Chencharu Central Residences FAQ",
+"Chencharu Condo FAQ: Launch, Price, TOP, Developer",
 "Chencharu Central Residences FAQ: launch, price, tenure, developer, homes, Khatib MRT, showflat, TOP and other names, each tied to a source and a label.",
 "FAQ",
-article("FAQ", "Short answers. The ledger has the sources.",
+article("FAQ", "Chencharu Central Residences FAQ: short answers, with the sources in the ledger.",
 "<strong>This is not the official project website.</strong> HDB sold the land. A developer price list was not found on 18 November 2026.",
 f'''<div class="faq">
 <details open><summary>When does it launch?</summary><p>The PropNex ebook says the end of January 2027, and The Star (March 2026) and EdgeProp Malaysia (October 2026) report a launch target of early 2027, the first quarter. None names a booking day. A 16 January preview and a 30 January booking day are one agent’s TBC dates, and other write-ups do not share them. {R}</p></details>
 <details><summary>What is the price?</summary><p>No developer price list. The land was $1,012,588,989.89, about $980 psf ppr. The PropNex agency ebook prints guide prices from about $1.3 million for the two-bedroom group. That is an agency guide, not a developer price list. {R}</p></details>
 <details><summary>Who is the developer?</summary><p>HDB awarded the site to Evia MCS Pte Ltd, Gamuda (Singapore) Pte Ltd and H108 Pte Ltd. Gamuda’s filing gives Gamuda (Singapore) 50%, Evia MCS 30% and H108 20% of Polaris Times Square Residences and of Times Square Mall. Ho Lee Group holds 30 of H108’s 100 shares. It is not a one-third partner. {C}</p></details>
 <details><summary>What is the tenure?</summary><p>99-year leasehold. The lease starts when the government receives the full land price, and it excludes the bus interchange and hawker centre land. {C}</p></details>
-<details><summary>Is it called anything else?</summary><p>Chencharu Central Residences is the marketing name in use, and the developer has not confirmed it yet. Also known as Chencharu Close GLS, Chencharu Close condo, Chencharu Close Residences, Chencharu condo, Chencharu integrated development, Khatib integrated condo and Yishun new launch 2027. {R}</p></details>
+<details><summary>Is it called anything else?</summary><p>Chencharu Central Residences is the marketing name in use, and the developer has not confirmed it yet. Also known as {AKA}. “Chencharu Grand Residences” appears on an agent marketing site; the developer has not used that name either. {R}</p></details>
+<details><summary>Is there a new launch condo near Khatib MRT?</summary><p>Yes. This project at Chencharu Close is within 450 metres of Khatib MRT (NS14), according to Gamuda’s filing. {C} Its launch is reported for the end of January 2027. {R} See <a href="/location/">the location page</a>.</p></details>
+<details><summary>Should I buy the Chencharu condo or a Chencharu BTO flat?</summary><p>They serve different buyers. A 4-room flat at Chencharu Acres, HDB’s November 2026 BTO, is $353,000 to $428,000 before grants, with income and ownership rules. {C} The condo has no developer price list yet; agency guide prices start from about $1.8 million for a three-bedroom. {R} See <a href="/vs-chencharu-bto/">the full comparison</a>.</p></details>
 <details><summary>How many homes?</summary><p>HDB estimated 875 and said the number may vary. Evia described about 860 apartments to The Business Times in September 2025. The ebook now says 875 in 11 blocks of 12 storeys. The developer has not released block or storey counts. {R}</p></details>
 <details><summary>How far is the MRT?</summary><p>Khatib is NS14. Yishun and Northpoint City are one stop. Orchard is 8 stops. Raffles Place is 12 stops, not 13. {C} Gamuda’s filing says within 450 metres, and the ebook says a sheltered walk under 6 minutes. This guide did not measure the path. {R}</p></details>
 <details><summary>Where is the showflat?</summary><p>Not stated in the ebook. One agent page says Yishun Ring Road opposite Wisteria Mall and marks it TBC. {R}</p></details>
@@ -426,7 +431,7 @@ PAGES.append(("/register/",
 "Register for the Chencharu Central Residences Price List",
 "Register for the Chencharu Central Residences developer price list and floor plans. Name and mobile only; nothing is reserved. Jack Leow, CEA R074023I.",
 "Register",
-article("Register", "Get the developer list when it exists.",
+article("Register", "Register for the Chencharu Central Residences developer price list.",
 "<strong>Name and mobile, plus an optional unit type. That is the form.</strong> You will be contacted about this project only. No guide price is attached, because it is not a price list.",
 f'''<section><div class="formcard">{form("register")}</div>
 <p class="fine" style="margin-top:14px">Or <a href="{WA}">WhatsApp {PHONE}</a>. Jack Leow, CEA R074023I, PropNex Realty Pte Ltd, licence L3008022J.</p>
@@ -434,10 +439,10 @@ f'''<section><div class="formcard">{form("register")}</div>
 "/register/"))
 
 PAGES.append(("/e-brochure/",
-"Chencharu Central Residences Ebook: What It Is",
+"Chencharu Central Residences E-Brochure: What the Ebook Is",
 "What the Chencharu Central ebook is: a PropNex agency guide dated 16 Nov 2026, with guide prices and a unit table. Not the developer's brochure or list.",
 "Ebook",
-article("Ebook", "An agency guide, not the developer brochure.",
+article("Ebook", "Chencharu Central Residences ebook: an agency guide, not the developer brochure.",
 "<strong>The file is a seven-page PropNex ebook titled Chencharu Central, Great Location Edition.</strong> Its properties date it 16 November 2026. The cover says launching end January 2027. The disclaimer says the drawings are artists’ impressions and not the final product.",
 f'''<section><h2>What was taken from it</h2>
 <ul>
@@ -460,10 +465,10 @@ f'''<section><h2>What was taken from it</h2>
 "/e-brochure/"))
 
 PAGES.append(("/news/",
-"Chencharu Central Residences Updates",
+"Chencharu Central Residences News and Updates",
 "Chencharu Central Residences updates, newest first: the HDB award, the LTA corridor revision, the Chencharu BTO launches and the agency ebook. No list yet.",
 "Updates",
-article("Updates", "What changed, and what did not.",
+article("Updates", "Chencharu Central Residences updates: what changed, and what did not.",
 "<strong>As of 18 November 2026 there is still no developer price list, no official floor plan and no confirmed showflat address.</strong>",
 f'''<section><ol class="tl">
 <li><time>18 Nov 2026</time><b>HDB’s June 2024 precinct plan was checked against CNA</b> The 400-metre bus road and the bungalow at 50 Bah Soon Pah Road are in this guide as HDB’s plan. The ebook’s 5,200 flats is not used as a total. There is still no developer price list.</li>
@@ -525,3 +530,69 @@ article("Sent", "Received.",
 f'''<section><p><a class="btn" href="/">Back to the guide</a></p></section>'''),
 ""))
 
+
+PAGES.append(("/bus-interchange-hawker-centre/",
+"Chencharu Bus Interchange & Hawker Centre at Chencharu Close",
+"Chencharu bus interchange and hawker centre: HDB requires at least 5,400 sq m and 3,500 sq m under the Chencharu Close condo. What is fixed, what is not.",
+"Bus interchange",
+article("Bus interchange", "Chencharu bus interchange and hawker centre: what HDB fixed, and what is still a drawing.",
+"<strong>A new bus interchange and a hawker centre are conditions of the land at Chencharu Close.</strong> HDB’s sale requires at least 5,400 square metres for the interchange and 3,500 square metres for the hawker centre, under the condo’s homes and shops. No separate completion date has been published for either.",
+f'''<section><h2>What the land sale fixes</h2>
+<div class="tbl"><table class="ledger"><tbody>
+<tr><th scope="row">Bus interchange</th><td>At least 5,400 sq m, about 58,125 sq ft, including 400 sq m of commercial space in the concourse. {C}</td></tr>
+<tr><th scope="row">Hawker centre</th><td>At least 3,500 sq m, about 37,674 sq ft. {C}</td></tr>
+<tr><th scope="row">Shops</th><td>At most 12,600 sq m, with at least 1,000 sq m net for a supermarket. One strata lot that cannot be subdivided. {C}</td></tr>
+<tr><th scope="row">Homes</th><td>At least 74,507 sq m of the maximum 96,007 sq m GFA. About 875 homes. {C}</td></tr>
+<tr><th scope="row">Lease</th><td>The condo’s 99-year lease does not include the land the interchange and hawker centre sit on. {C}</td></tr>
+</tbody></table></div>
+<p class="fine">Sources: Gamuda Berhad’s announcement of 29 September 2025; The Business Times, 11 September 2025, for the single strata lot. Full rows in the <a href="/facts/">fact ledger</a>.</p>
+</section>
+<section><h2>What is only in the marketing so far</h2>
+<p>The PropNex agency ebook describes an air-conditioned interchange and a 40-stall hawker centre of about 720 seats, with a mall of supermarket, shops and food under the homes. None of that detail is in the HDB award. Treat it as the current scheme, not a commitment. {R}</p>
+</section>
+<section><h2>When will the Chencharu bus interchange be ready?</h2>
+<p>No date has been published for the interchange or the hawker centre on their own. HDB’s tender gives the whole project a completion period of 84 months from the award on 26 September 2025, which runs to September 2032. {C} That is the outer limit for the development, not an opening date for the buses.</p>
+<p>HDB’s 2024 plan for the Chencharu estate also includes Chencharu Link, a 400-metre bus-only road running north to south through the new estate. {C}</p>
+</section>
+<section><h2>A Yishun integrated development: what it means day to day</h2>
+<ul>
+<li><b>Buses and food downstairs.</b> Residents will live over an interchange, a hawker centre and a supermarket, within 450 metres of Khatib MRT. {C}</li>
+<li><b>Footfall and noise.</b> An interchange and a hawker centre bring buses and crowds from the whole new estate. When floor plans are out, check which blocks face the interchange and the hawker centre.</li>
+<li><b>You are buying a home, not the podium.</b> The shops are one strata lot and the interchange and hawker land sit outside the condo’s lease. Ask the developer how the costs of the podium are shared before you buy.</li>
+<li><b>Price.</b> The land rate of about $980 psf ppr reflects these uses. The <a href="/price/">price page</a> sets out what is known.</li>
+</ul>
+<p><a class="more" href="/site-plan/">How the GFA splits</a> &nbsp; <a class="more" href="/facilities/">Club facilities in the ebook</a></p>
+</section>'''),
+"/bus-interchange-hawker-centre/"))
+
+PAGES.append(("/vs-chencharu-bto/",
+"Chencharu Condo vs Chencharu BTO: Price, Size, Wait Compared",
+"Chencharu condo vs Chencharu BTO: Chencharu Acres 4-room flats from $353,000 before grants, against agency guide prices for the condo. Price, size, wait.",
+"Condo vs BTO",
+article("Condo vs BTO", "Chencharu condo vs Chencharu BTO: two different purchases in the same estate.",
+"<strong>A 4-room flat at Chencharu Acres, HDB’s November 2026 BTO, costs $353,000 to $428,000 before grants.</strong> The Chencharu Close condo has no developer price list yet; an agency ebook prints guide prices from about $1.8 million for a three-bedroom. Most buyers will qualify for only one of the two.",
+f'''<section><h2>Side by side</h2>
+<div class="tbl"><table>
+<thead><tr><th></th><th>Chencharu Acres BTO (Nov 2026)</th><th>Chencharu Close condo</th></tr></thead>
+<tbody>
+<tr><td>Price</td><td>3-room $297,000 to $355,000; 4-room $353,000 to $428,000; 5-room $484,000 to $604,000, before grants {C}</td><td>No developer price list. Agency guide from about $1.3 million (2-bedroom), $1.8 million (3-bedroom), $2.3 million (4-bedroom) {R}</td></tr>
+<tr><td>Size</td><td>3-room about 69 sq m; 4-room about 93 sq m; 5-room about 113 sq m (estimated) {C}</td><td>527 to 1,389 sq ft, about 49 to 129 sq m, in the agency ebook {R}</td></tr>
+<tr><td>Homes</td><td>1,582 flats {C}</td><td>About 875 {R}</td></tr>
+<tr><td>Tenure</td><td>99-year lease</td><td>99-year leasehold {C}</td></tr>
+<tr><td>Wait</td><td>39 or 41 months, depending on the block {C}</td><td>HDB’s completion period for the project runs to September 2032 {C}</td></tr>
+<tr><td>Minimum occupation</td><td>5 years (Standard project) {C}</td><td>None. Seller’s stamp duty applies if you sell within 4 years</td></tr>
+<tr><td>Who can buy</td><td>HDB eligibility: citizenship, family nucleus, household income ceiling, no private property</td><td>Anyone; additional buyer’s stamp duty depends on residency and homes already owned</td></tr>
+<tr><td>Downstairs</td><td>Estate amenities</td><td>A bus interchange, a hawker centre and shops in the podium {C}</td></tr>
+</tbody></table></div>
+<p class="fine">BTO figures: HDB’s November 2026 sales exercise as published by CNA and reported by Stacked Homes and Home &amp; Decor, 4 to 5 November 2026. Condo figures: see the <a href="/facts/">fact ledger</a>. Check eligibility on HDB’s website for your own case.</p>
+</section>
+<section><h2>How to think about it</h2>
+<ul>
+<li><b>If you qualify for the BTO and the price matters most,</b> the BTO is the far cheaper way into the same estate. A 4-room flat of about 93 sq m costs less than a quarter of the condo’s agency guide for a three-bedroom of 74 to 89 sq m.</li>
+<li><b>If you already own an HDB flat past its minimum occupation period,</b> or earn above the BTO income ceiling, the condo is the new home you can buy in Chencharu.</li>
+<li><b>If you own private property,</b> a BTO flat is not open to you.</li>
+<li><b>The condo’s extra cost buys</b> condo facilities, no minimum occupation period, the interchange and hawker centre downstairs, and a home you can sell or rent on the open market. Whether that is worth the gap depends on the developer’s real price, which is not out yet.</li>
+</ul>
+<p><a class="more" href="/price/">What is known about the condo price</a> &nbsp; <a class="more" href="/location/">The Chencharu estate plan</a></p>
+</section>'''),
+"/vs-chencharu-bto/"))

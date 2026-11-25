@@ -10,13 +10,15 @@ CSS_V = "0"
 UPDATED = "2026-11-18"          # facts last checked (byline); change only after re-verifying
 PUBLISHED = "2026-11-18"
 # dateModified / sitemap lastmod per page: bump only when that page's content materially changes (CLAUDE.md section 6)
-MODIFIED = {"/": "2026-11-23", "/price/": "2026-11-21", "/facts/": "2026-11-23", "/faq/": "2026-11-23",
+MODIFIED = {"/": "2026-11-25", "/price/": "2026-11-21", "/facts/": "2026-11-25", "/faq/": "2026-11-25",
+            "/location/": "2026-11-25", "/bus-interchange-hawker-centre/": "2026-11-25", "/vs-chencharu-bto/": "2026-11-25",
             "/launch-date/": "2026-11-23", "/news/": "2026-11-23",
             "/register/": "2026-11-21", "/review/": "2026-11-21",
             "/privacy/": "2026-11-22"}
 INDEXNOW_KEY = "5d0c7a91e4b24f3c8a6e2b17f9d4c380"
 ALIASES = ["Chencharu Close GLS", "Chencharu Close condo", "Chencharu Close Residences", "Chencharu condo",
-           "Chencharu integrated development", "Khatib integrated condo", "Yishun new launch 2027"]
+           "Chencharu Close Residence", "Chencharu integrated development", "Khatib integrated condo",
+           "Khatib new launch condo", "Chencharu Grand Residences", "Yishun new launch 2027"]
 AKA = ", ".join(ALIASES[:-1]) + " and " + ALIASES[-1]
 GEO = (1.41522, 103.82915)   # OneMap point for Chencharu Close (road), 21 Nov 2026
 CHECKED = "18 November 2026"
@@ -40,6 +42,7 @@ MORE = [
     ("/price/", "Price"),
     ("/floor-plans/", "Floor plans"),
     ("/site-plan/", "Site plan"),
+    ("/bus-interchange-hawker-centre/", "Bus interchange & hawker"),
     ("/facilities/", "Facilities"),
     ("/location/", "Location"),
     ("/schools/", "Schools"),
@@ -47,6 +50,7 @@ MORE = [
     ("/launch-date/", "Launch date"),
     ("/developer/", "Developer"),
     ("/review/", "Review"),
+    ("/vs-chencharu-bto/", "Condo vs BTO"),
     ("/facts/", "Fact ledger"),
     ("/faq/", "FAQ"),
     ("/e-brochure/", "What the ebook is"),
@@ -199,22 +203,25 @@ WA_NAME = {"/": "home", "/price/": "price", "/floor-plans/": "floor plans", "/si
            "/showflat/": "showflat", "/launch-date/": "launch date", "/facilities/": "facilities", "/schools/": "schools",
            "/review/": "review", "/developer/": "developer", "/facts/": "fact ledger", "/faq/": "FAQ", "/register/": "registration",
            "/e-brochure/": "ebook", "/news/": "updates", "/about/": "about", "/privacy/": "privacy", "/thank-you/": "thank-you",
-           "/404.html": "home"}
+           "/404.html": "home",
+           "/bus-interchange-hawker-centre/": "bus interchange", "/vs-chencharu-bto/": "condo vs BTO"}
 ANCH = {"/price/": "Chencharu Central Residences price: land bid and agency guide prices", "/register/": "Register for the developer price list and floor plans",
         "/floor-plans/": "Unit mix: about 875 homes, 527 to 1,389 sq ft", "/site-plan/": "Site plan: the GFA split, podium and height limit",
         "/facilities/": "Bus interchange, hawker centre and reported facilities", "/location/": "Location: Khatib MRT and the Chencharu estate",
         "/schools/": "Schools named near Chencharu Close", "/showflat/": "Showflat: what has and has not been confirmed",
         "/launch-date/": "Launch date: the reported January 2027 window", "/review/": "Independent review: pros, cons and who it suits",
         "/developer/": "Developer: Gamuda, Evia and H108 shareholdings", "/facts/": "Fact ledger: every figure with its source",
-        "/faq/": "Chencharu Central Residences FAQ", "/news/": "Latest updates, newest first", "/e-brochure/": "What the agency ebook is"}
+        "/faq/": "Chencharu Central Residences FAQ", "/news/": "Latest updates, newest first", "/e-brochure/": "What the agency ebook is",
+        "/bus-interchange-hawker-centre/": "Chencharu bus interchange and hawker centre", "/vs-chencharu-bto/": "Chencharu condo vs Chencharu BTO"}
 REL = {"/price/": ["/floor-plans/", "/review/", "/developer/"], "/floor-plans/": ["/site-plan/", "/review/", "/facilities/"],
-       "/site-plan/": ["/facilities/", "/floor-plans/", "/location/"], "/location/": ["/schools/", "/site-plan/", "/review/"],
+       "/site-plan/": ["/bus-interchange-hawker-centre/", "/facilities/", "/floor-plans/"], "/location/": ["/schools/", "/bus-interchange-hawker-centre/", "/vs-chencharu-bto/"],
        "/showflat/": ["/launch-date/", "/floor-plans/", "/news/"], "/launch-date/": ["/showflat/", "/news/", "/faq/"],
-       "/facilities/": ["/site-plan/", "/review/", "/location/"], "/schools/": ["/location/", "/faq/", "/review/"],
+       "/facilities/": ["/bus-interchange-hawker-centre/", "/site-plan/", "/review/"], "/schools/": ["/location/", "/faq/", "/review/"],
        "/review/": ["/facts/", "/location/", "/floor-plans/"], "/developer/": ["/facts/", "/review/", "/news/"],
        "/facts/": ["/faq/", "/news/", "/review/"], "/faq/": ["/facts/", "/launch-date/", "/review/"],
        "/register/": ["/floor-plans/", "/launch-date/", "/review/"], "/e-brochure/": ["/facts/", "/floor-plans/", "/price/"],
-       "/news/": ["/launch-date/", "/facts/", "/review/"], "/about/": ["/facts/", "/review/", "/news/"]}
+       "/news/": ["/launch-date/", "/facts/", "/review/"],
+       "/bus-interchange-hawker-centre/": ["/site-plan/", "/location/", "/review/"], "/vs-chencharu-bto/": ["/review/", "/floor-plans/", "/location/"], "/about/": ["/facts/", "/review/", "/news/"]}
 
 
 def wa_url(path):
@@ -267,7 +274,7 @@ def byline():
 HOME = f'''
 <section class="hero"><div class="wrap">
 <p class="pill">Launch window reported for the end of January 2027</p>
-<p class="eyebrow">Chencharu Close · Yishun · District 27 · Outside Central Region</p>
+<p class="eyebrow">Chencharu Close condo · Khatib · Yishun · District 27 · Outside Central Region</p>
 <h1>Chencharu Central Residences</h1>
 <p class="value">Read the land price, the unit mix and the corrections before you treat a guide price as a price list.</p>
 <p class="lede">A 99-year leasehold mixed-use site at Chencharu Close, awarded by HDB on 26 September 2025 for $1,012,588,989.89. Homes are planned above a bus interchange, a hawker centre and shops, near Khatib MRT. No developer price list was found as of 18 November 2026.</p>
@@ -296,7 +303,7 @@ HOME = f'''
 
 <section class="sec"><div class="wrap grid2">
 <div><p class="eyebrow">Where this stands</p><h2>The podium is the product. The price is not proven yet.</h2></div>
-<div><p>HDB sold this as the first private-housing site in the new Chencharu precinct, and required a bus interchange and a hawker centre on it. That is a different building from a normal condominium plot.</p>
+<div><p>HDB sold this as the first private-housing site in the new Chencharu precinct, and required a bus interchange and a hawker centre on it. That is a different building from a normal condominium plot. <a href="/bus-interchange-hawker-centre/">What the bus interchange and hawker centre requirements say</a>.</p>
 <p>What is not proven is the selling price. A PropNex agency ebook dated 16 November 2026 prints guide prices from about $1.3 million for a two-bedroom (agency guide, not a developer price list). Several agent sites are already presenting those figures as a developer price list.</p>
 <p><a class="more" href="/review/">Read the review</a></p>{legend()}</div>
 </div></section>
@@ -339,7 +346,7 @@ HOME = f'''
 
 # Page bodies live next to this file so the published folder stays HTML only.
 def load_pages():
-    ns = {"C": C, "R": R, "E": E, "form": form, "legend": legend, "byline": byline, "WA": WA, "PHONE": PHONE, "UPDATED": UPDATED}
+    ns = {"C": C, "R": R, "E": E, "form": form, "legend": legend, "byline": byline, "WA": WA, "PHONE": PHONE, "UPDATED": UPDATED, "AKA": AKA}
     code = (Path(__file__).with_name("chencharu_pages.py")).read_text(encoding="utf-8")
     exec(code, ns)
     return ns["PAGES"]
@@ -347,8 +354,8 @@ def load_pages():
 
 def main():
     pages = [
-        ("/", "Chencharu Central Residences: Price, Floor Plans and Showflat",
-         "Independent guide to Chencharu Central Residences at Chencharu Close, Yishun: $980 psf ppr land bid, about 875 homes, Khatib MRT. No developer price list.",
+        ("/", "Chencharu Central Residences: Chencharu Close Condo at Khatib",
+         "Chencharu Close condo near Khatib MRT: Chencharu Central Residences, about 875 homes, $980 psf ppr land bid. Independent guide; no developer list yet.",
          "Overview", HOME, "/"),
     ] + load_pages() + [
         ("/404.html", "Page not found | Chencharu Central Residences Guide", "This page does not exist on the Chencharu Central Residences guide.",

@@ -6,17 +6,18 @@ targets an intent not listed here and has unique substance; otherwise strengthen
 
 | Intent / queries | Page | Notes |
 |---|---|---|
-| chencharu central residences, chencharu close condo, chencharu condo, chencharu yishun condo, khatib new launch, yishun new launch | `/` | Name status and "Also known as" in the key facts table; schema `alternateName` |
+| chencharu central residences, chencharu close condo / residences, chencharu condo, chencharu yishun condo, khatib condo, khatib new launch (condo), yishun new launch | `/` (+ FAQ "new launch condo near Khatib MRT") | Name status and "Also known as" in the key facts table; schema `alternateName` |
 | price, price list, psf, how much | `/price/` | Price list section to pre-build, hidden until release (section 14) |
 | floor plan, 2/3/4/5 bedroom, unit mix, sizes | `/floor-plans/` | |
 | site plan, blocks | `/site-plan/` | Blocks: not released by the developer |
 | facilities | `/facilities/` | |
-| integrated development, mall, bus interchange, hawker centre, podium | `/site-plan/` + `/facilities/` for now | Backlog: a dedicated podium page only with real analysis (benchmarks vs Northpoint / Parktown) |
+| integrated development, yishun integrated development, chencharu bus interchange (completion date), chencharu hawker centre | `/bus-interchange-hawker-centre/` | Live 25 Nov 2026. Benchmarks vs Northpoint / Parktown still backlog |
 | showflat, preview, booking | `/showflat/` | |
 | launch date | `/launch-date/` | |
 | balance units, sales results | (create at launch) | Pre-build hidden |
 | review, worth buying, pros and cons | `/review/` | |
-| vs north park residences, vs chencharu BTO, vs EC, vs Lentor | (none yet) | Backlog: one page per comparison, only with real analysis |
+| chencharu bto, chencharu bto price, condo vs BTO | `/vs-chencharu-bto/` | Live 25 Nov 2026 (Chencharu Acres, Nov 2026 BTO prices) |
+| vs north park residences, vs EC, vs Lentor | (none yet) | Backlog: one page per comparison, only with real analysis |
 | schools within 1km | `/schools/` | OneMap 1 km / 2 km bands still to add |
 | Khatib MRT distance, location, chencharu estate, masterplan | `/location/` | Estate guide section is already on this page |
 | developer, Evia, Gamuda Land, Ho Lee | `/developer/` | |
