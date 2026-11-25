@@ -313,6 +313,9 @@ f'''<section>
 <li>HDB’s completion period runs to September 2032. You are buying a long build on a working interchange site.</li>
 </ul></div></div>
 </section>
+<section><h2>Our verdict on price</h2>
+<p><strong>Buy only below about $1,930 psf; walk away above about $2,120 psf for a 3-bedroom (about $1.87 million for 880 sq ft).</strong> At the $2,300 to $2,450 psf analysts expect, our base case earns about 0% to 1.3% a year after stamp duty and selling costs, because comparable Yishun condos grew only about 2.7% a year. Skip the 5-bedroom unless you will live in it for 10 years or more. {E} The full working is in our <a href="https://www.sellingsgproperty.com/condo-analysis/chencharu-central-residences/">Chencharu analysis on sellingsgproperty.com</a>.</p>
+</section>
 <section><h2>Who it suits</h2>
 <p>An owner-occupier in the north who wants a new 99-year condo, can live with a 2030s completion, and cares more about the hawker centre, the buses and Khatib than about being the first resale in the precinct. The family sizes are the bulk of the reported mix: 395 three-bedroom homes and 180 four-bedroom homes.</p>
 <p>It is a weak fit if you need a psf you can defend this month, if you want a shop as part of the purchase, or if you are treating an agency guide price of “from about $1.3 million” as a cheque amount. The retail is one strata lot. You are buying a home.</p>

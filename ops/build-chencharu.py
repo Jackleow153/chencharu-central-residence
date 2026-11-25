@@ -13,7 +13,7 @@ PUBLISHED = "2026-11-18"
 MODIFIED = {"/": "2026-11-25", "/price/": "2026-11-21", "/facts/": "2026-11-25", "/faq/": "2026-11-25",
             "/location/": "2026-11-25", "/bus-interchange-hawker-centre/": "2026-11-25", "/vs-chencharu-bto/": "2026-11-25",
             "/launch-date/": "2026-11-23", "/news/": "2026-11-23",
-            "/register/": "2026-11-21", "/review/": "2026-11-21",
+            "/register/": "2026-11-21", "/review/": "2026-11-25",
             "/privacy/": "2026-11-22"}
 INDEXNOW_KEY = "5d0c7a91e4b24f3c8a6e2b17f9d4c380"
 ALIASES = ["Chencharu Close GLS", "Chencharu Close condo", "Chencharu Close Residences", "Chencharu condo",
